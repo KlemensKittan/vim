@@ -873,56 +873,43 @@ The commands are grouped into categories.
   </tr>
 </table>
 
-### Extensions
+## Plugins
 
-<table>
-  <colgroup>
-    <col width="20%" />
-    <col width="80%" />
-  </colgroup>
-  <thead>
-    <tr>
-      <th>Command</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tr>
-    <td>onedark.vim</td>
-    <td>light and dark vim colorscheme</td>
-  </tr>
-  <tr>
-    <td>vim-airline</td>
-    <td>will draw a nice statusline at the bottom</td>
-  </tr>
-  <tr>
-    <td>vim-airline-themes</td>
-    <td>will draw a nice statusline at the bottom</td>
-  </tr>
-  <tr>
-    <td>ctrlp.vim</td>
-    <td>full path fuzzy file, buffer, tag, ... finder for vim</td>
-  </tr>
-  <tr>
-    <td>ack.vim</td>
-    <td>run your favorite search tool from Vim, with an enhanced results list</td>
-  </tr>
-  <tr>
-    <td>nerdcommenter</td>
-    <td>comment functions so powerful</td>
-  </tr>
-  <tr>
-    <td>nerdtree</td>
-    <td>file system explorer for vim</td>
-  </tr>
-  <tr>
-    <td>vim-fugitive</td>
-    <td>a complement to command line git</td>
-  </tr>
-  <tr>
-    <td>syntastic</td>
-    <td>syntax checking plugin</td>
-  </tr>
-</table>
+vim-plug, a modern Vim plugin manager, downloads plugins into separate
+directories for you and makes sure that they are loaded correctly. It allows
+you to easily update the plugins, review (and optionally revert) the changes,
+and remove the plugins that are no longer used.
+
+### Plugin list
+
+- **onedark.vim**<br>
+  Adaptation of one-light and one-dark colorschemes for Vim
+
+- **vim-airline**<br>
+  Will draw a nice statusline at the bottom
+
+- **vim-airline-themes**<br>
+  Will draw a nice statusline at the bottom
+
+- **ack.vim**<br>
+  Run your favorite search tool from Vim, with an enhanced results list
+
+- **ctrlp.vim**<br>
+  Full path fuzzy file, buffer, tag, ... finder for vim
+
+- **nerdcommenter**<br>
+  Comment functions so powerful
+
+- **nerdtree**<br>
+  File system explorer for vim
+
+- **syntastic**<br>
+  Syntax checking plugin
+
+- **vim-fugitive**<br>
+  A complement to command line git
+
+## Key bindings
 
 ## Resources
 
