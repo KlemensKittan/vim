@@ -911,6 +911,85 @@ and remove the plugins that are no longer used.
 
 ## Key bindings
 
+### Shortcuts
+
+#### Folding
+
+- **nnoremap <space> za**<br>
+  Space key to toggle folds
+
+#### Working with multiple files
+
+- **nnoremap <C-J> <C-W><C-J>**<br>
+  Move cursor to the window below (horizontal split)
+
+- **nnoremap <C-K> <C-W><C-K>**<br>
+  Move cursor to the window above (horizontal split)
+
+- **nnoremap <C-L> <C-W><C-L>**<br>
+  Move cursor to the right window (vertical split)
+
+- **nnoremap <C-H> <C-W><C-H>**<br>
+  Move cursor to the left window (vertical split)
+
+- **nnoremap - <C-W>-**<br>
+  Decrease current buffer
+
+- **nnoremap + <C-W>+**<br>
+  Increase current buffer
+
+- **nnoremap < <C-W><**<br>
+  Decrease current buffer
+
+- **nnoremap > <C-W>>**<br>
+  Increase current buffer
+
+- **nnoremap = <C-W>=**<br>
+  Divide all buffers equally
+
+- **nnoremap _ <C-W>_**<br>
+  Current buffer maximize
+
+- **nnoremap \| <C-W>\|**<br>
+  Current buffer maximize
+
+### Plugin plug
+- **:PlugInstall**<br>i
+  Install plugins
+
+- **:PlugUpdate**<br>
+  Install or update plugins
+  
+- **:PlugClean[!]**<br>
+  Remove unlisted plugins
+  
+- **:PlugUpgrade**<br>
+  Upgrade vim-plug itself
+
+- **:PlugStatus**<br>
+  Check the status of plugins
+
+### Plugin ack
+"  o to open (same as Enter)
+"  O to open and close the quickfix window
+"  t to open in new tab
+"  T to open in new tab without moving to it
+"  v to open in vertical split
+"  q to close the quickfix window
+cnoreabbrev Ack Ack!
+nnoremap <leader>a :Ack!<Space>
+
+### Plugin nerdcommenter
+"  <leader>cc       Comment out the current line or text selected in visual mode
+"  <leader>cn       Same as <leader>cc but forces nesting
+"  <leader>cu       Uncomments the selected line(s)
+"  <leader>c<space> Toggles the comment state of the selected line(s)
+
+### Plugin nerdtree
+"  t to open the selected file in a new tab
+"  s to open the selected file in a vertical split window
+map <leader>n :NERDTreeToggle<CR>
+
 ## Resources
 
 - <http://vim.wikia.com/wiki/Vim_Tips_Wiki>
