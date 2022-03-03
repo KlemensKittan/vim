@@ -1,9 +1,3 @@
----
-layout: page
-exclude: true
-title: Vim
----
-
 ## Configuring
 
 ### Installing the Software
