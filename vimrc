@@ -141,18 +141,26 @@ au BufWinEnter ?* silent! loadview
 
 
 " Shortcuts {{{1
+" The <leader> key is mapped to \ by default.
+
+" Shortcuts for folding
 nnoremap <space> za
+
+" Shortcuts for working with multiple files
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-nnoremap - <C-W>-
+" Horizontal split
 nnoremap + <C-W>+
-nnoremap < <C-W><
-nnoremap > <C-W>>
-nnoremap = <C-W>=
+nnoremap - <C-W>-
 nnoremap _ <C-W>_
+" Vertical split
+nnoremap > <C-W>>
+nnoremap < <C-W><
 nnoremap \| <C-W>\|
+" Normalize all split sizes
+nnoremap = <C-W>=
 
 
 " Plugin plug {{{1
@@ -182,6 +190,15 @@ cnoreabbrev Ack Ack!
 nnoremap <leader>a :Ack!<Space>
 
 
+" Plugin fugitive {{{1
+"  :Git     to run any Git commands
+"  :Gstatus to check the repository status
+"   - stage a file for commit
+"   - unstage a file for commit
+"  :Gcommit to commit the changes
+"  :Gpush   to update the remote repository
+
+
 " Plugin nerdcommenter {{{1
 "  <leader>cc       Comment out the current line or text selected in visual mode
 "  <leader>cn       Same as <leader>cc but forces nesting
@@ -190,8 +207,14 @@ nnoremap <leader>a :Ack!<Space>
 
 
 " Plugin nerdtree {{{1
-"  t to open the selected file in a new tab
+"  m to execute filesystem operations
+"  i to open the selected file in a horizontal split window
 "  s to open the selected file in a vertical split window
+"  t to open the selected file in a new tab
+"    :gt move to the next tab
+"    :gT move to the previous tab
+"    :tabc close the current tab and all its windows
+"    :tabo close all tabs except for the current one
 map <leader>n :NERDTreeToggle<CR>
 
 
