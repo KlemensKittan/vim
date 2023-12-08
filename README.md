@@ -2,7 +2,8 @@
 
 The list of steps required to clone a Git repository with submodules is:
 
-    # git clone https://github.com/KlemensKittan/vim.git
+    # git clone https://github.com/KlemensKittan/vim.git .vim
+    # cd .vim
     # git submodule init
     # git submodule update
 
@@ -10,7 +11,7 @@ There is actually an alternative to going through these three steps. You can
 use the `--recurse-submodules` switch on the clone. This approach, shown below,
 might be easier.
 
-    # git clone --recurse-submodules https://github.com/KlemensKittan/vim.git
+    # git clone --recurse-submodules https://github.com/KlemensKittan/vim.git .vim
 
 ## Configuring
 
